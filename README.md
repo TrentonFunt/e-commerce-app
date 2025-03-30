@@ -51,7 +51,7 @@ No server required - the disappointment is client-side only
 
 - Watch cart counter increase while your cat judges you
 
-2. "Checkout":
+3. "Checkout":
 
 - Enter fake payment details (we recommend 4111-1111-1111-1111)
 
@@ -77,4 +77,4 @@ No server required - the disappointment is client-side only
 
 ### Variation Selection
 
-![Color Options](/e-commerce-app/screenshots/variation-selection.png)
+![Color Options](/screenshots/variation-selection.png)
