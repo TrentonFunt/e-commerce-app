@@ -1,0 +1,140 @@
+:root {
+  --pink: #FF69B4;
+  --purple: #9370DB;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+  margin: 0;
+  background: #f8f8ff;
+}
+
+header {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Bangers', cursive;
+  color: var(--pink);
+  font-size: 2rem;
+}
+
+.cart-counter {
+  background: var(--purple);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.variations {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+
+.variation-option {
+  background: white;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.variation-option:hover {
+  transform: translateY(-5px);
+}
+
+.color-swatch {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border: 2px solid #ddd;
+}
+
+.rainbow {
+  background: linear-gradient(45deg,
+      #ff0000 16%,
+      #ffa500 16%, #ffa500 33%,
+      #ffff00 33%, #ffff00 50%,
+      #008000 50%, #008000 66%,
+      #0000ff 66%, #0000ff 83%,
+      #800080 83%);
+}
+
+.variation-option h4 {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.variation-option p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #666;
+  min-height: 40px;
+}
+
+.variation-option.selected {
+  border-color: var(--pink);
+}
+
+.add-to-cart {
+  background: var(--pink);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.add-to-cart:hover {
+  transform: scale(1.05);
+}
+
+.checkout-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+}
